@@ -57,20 +57,16 @@
         <h3 class="w3-left-align" id="video"><b>Abstract</b></h3>
         <hr>
         <p>
-            We propose a fast and realistic face swapping model FastSwap, a shallow and lightweight network trained in a self-supervised way without any manual annotations.
-            The core of our network is a novel decoder block, called Triple Adaptive Normalization (TAN) block, which can effectively integrate the identity and pose information.
-            To extract the attributes from the driving image and generate a plausible face swapping result, we propose a novel data augmentation and switch-test strategy considering the distribution gap of the training and test steps.
-            Extensive experiments on VoxCeleb2 and wild faces demonstrate that our model generates high-fidelity face swapping results faster and better preserves the identity and pose compared to other state-of-the-art methods.
-            Furthermore, we conduct an in-depth study to understand the effect of each design component of our proposal. Please refer to our project webpage to make your own face swapping results and view additional results.
+            We propose FastSwap, a novel one-stage framework for fast face swapping, which aims to rapidly generate a high-fidelity face image with the identity of the source image and the pose and attributes of the target image. Unlike previous face swapping works, we design a shallow and lightweight network trained in a self-supervised manner without any manual annotations. The core of our framework is a novel decoder block, called Triple Adaptive Normalization (TAN) block, which effectively integrates the identity and pose information. Besides, we propose a novel data augmentation and switch-test strategy to extract the attributes from the target image, and such a strategy further enables controllable attribute editing. Extensive experiments on VoxCeleb2 and wild faces demonstrate that our framework generates high-fidelity face swapping results faster and better preserves the identity, pose, and attributes than other state-of-the-art methods. Furthermore, we conduct an in-depth study to understand the effect of each design component of our proposal. 
 <!--             <img src="model.png" width="800" align="middle"> -->
             <table>
               <tr>
                   
 <!--                       <figure> -->
-                  <td><img alt="" src="fastswap_train.png" width=475px /></td>
+                  <td><img alt="" src="overall_train2.png" width=475px /></td>
 <!--                           <figcaption> (a) Overall Structure </figcaption> -->
 <!--                       </figure> -->
-                  <td><img alt="" src="TAN_block.png" width=325px/></td>
+                  <td><img alt="" src="train_test_example.png" width=325px/></td>
               <tr>
             </table>
          
